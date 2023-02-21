@@ -14,7 +14,7 @@ public class principal {
                 954126);
         conta2.depositar(100);
 
-        caixaEletronico.imprimirDemonstrativo(conta1);
+        caixaEletronico.imprimirDemonstrativo(conta2);
 
 
 

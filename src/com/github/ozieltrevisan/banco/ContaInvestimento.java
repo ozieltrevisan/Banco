@@ -12,6 +12,11 @@ public class ContaInvestimento extends Conta {
         return valorTotalRendimentos;
     }
 
+    @Override
+    boolean possuiGratuidadeImpressao() {
+        return getValorTotalRendimentos() > 0;
+    }
+
     public void creditarRendimento(double percentualJuros) {
         double valorRedimentos = getSaldo() * percentualJuros / 100;
         this.valorTotalRendimentos += valorRedimentos;

@@ -38,6 +38,10 @@ public class Conta {
         this.saldo = saldo;
     }
 
+    boolean possuiGratuidadeImpressao(){
+        return false;
+    }
+
     protected void ValidarSaldoDisponivel(double valorSaque) {
         if (getSaldo() < valorSaque) {
             throw new RuntimeException("Saldo insuficiente para saque ");
